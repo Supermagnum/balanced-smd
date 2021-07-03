@@ -16,3 +16,4 @@ https://github.com/Supermagnum/balanced-smd/blob/main/back.jpg
 
 Aisler link:
 https://aisler.net/p/YIWINLSK
+Aisler can suply this assembled with the SMD components in place.
