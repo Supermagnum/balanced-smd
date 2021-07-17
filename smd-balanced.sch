@@ -98,7 +98,7 @@ L Device:D_Zener D1
 U 1 1 60CCADCC
 P 6700 1800
 F 0 "D1" V 6654 1880 50  0000 L CNN
-F 1 "BZT52C18-7-F" V 6745 1880 50  0000 L CNN
+F 1 "MMSZ11T1G" V 6745 1880 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-123" H 6700 1800 50  0001 C CNN
 F 3 "~" H 6700 1800 50  0001 C CNN
 	1    6700 1800
@@ -200,10 +200,10 @@ Connection ~ 5550 1350
 Connection ~ 5950 1350
 Text GLabel 5050 1000 1    50   Input ~ 0
 VCC
-Text GLabel 5100 2150 1    50   Input ~ 0
+Text GLabel 9100 1000 1    50   Input ~ 0
 VCC
 Wire Wire Line
-	5100 2150 5100 2300
+	9100 1000 9100 1150
 Connection ~ 5050 1050
 Wire Wire Line
 	2050 3800 2050 3700
@@ -240,13 +240,10 @@ F 3 "~" H 3750 2750 50  0001 C CNN
 	1    3750 2750
 	0    1    1    0   
 $EndComp
-NoConn ~ 5200 2300
-NoConn ~ 5200 2900
-NoConn ~ 5300 2900
-Text GLabel 5100 3000 3    50   Input ~ 0
+Text GLabel 9100 1850 3    50   Input ~ 0
 V-
 Wire Wire Line
-	5100 3000 5100 2900
+	9100 1850 9100 1750
 $Comp
 L Device:R R7
 U 1 1 60CDC00E
@@ -276,17 +273,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 3350 3750 3600
 Connection ~ 7500 2800
-$Comp
-L Amplifier_Operational:NE5534 U1
-U 1 1 60CCF692
-P 5200 2600
-F 0 "U1" H 5544 2646 50  0000 L CNN
-F 1 "NE5534PS " H 5544 2555 50  0000 L CNN
-F 2 "Package_SO:PowerIntegrations_SO-8" H 5250 2650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 5250 2750 50  0001 C CNN
-	1    5200 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 2800 7500 2800
 $Comp
@@ -377,7 +363,6 @@ Wire Wire Line
 	4150 2900 3750 2900
 Wire Wire Line
 	5500 2600 5900 2600
-Connection ~ 5500 2600
 $Comp
 L Device:R R9
 U 1 1 60D282CB
@@ -418,15 +403,6 @@ Wire Wire Line
 	3850 1350 3750 1350
 Connection ~ 3750 1350
 Connection ~ 8550 3150
-Text GLabel 5850 3600 1    50   Input ~ 0
-VCC
-Wire Wire Line
-	5850 3600 5850 3750
-NoConn ~ 5950 4350
-Text GLabel 5850 4450 3    50   Input ~ 0
-V-
-Wire Wire Line
-	5850 4450 5850 4350
 Wire Wire Line
 	5650 4150 5650 4800
 Wire Wire Line
@@ -434,12 +410,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 4300 6250 4300
 Wire Wire Line
-	6250 4300 6250 4050
-Wire Wire Line
 	6700 2800 6250 2800
-Wire Wire Line
-	6250 2800 6250 4050
-Connection ~ 6250 4050
 Connection ~ 3750 3600
 Wire Wire Line
 	4350 3600 3750 3600
@@ -460,17 +431,6 @@ Wire Wire Line
 Connection ~ 4800 2700
 Wire Wire Line
 	4800 2700 4900 2700
-$Comp
-L Amplifier_Operational:NE5534 U2
-U 1 1 60D5461E
-P 5950 4050
-F 0 "U2" H 6294 4096 50  0000 L CNN
-F 1 "NE5534PS " H 6294 4005 50  0000 L CNN
-F 2 "Package_SO:PowerIntegrations_SO-8" H 6000 4100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5534.pdf" H 6000 4200 50  0001 C CNN
-	1    5950 4050
-	1    0    0    -1  
-$EndComp
 Text Notes 8800 2800 0    50   ~ 0
 +48 V phantom power
 Wire Wire Line
@@ -531,8 +491,6 @@ Wire Wire Line
 Connection ~ 2050 1650
 Wire Wire Line
 	2050 1650 2950 1650
-NoConn ~ 5950 3750
-NoConn ~ 6050 4350
 $Comp
 L Device:D D4
 U 1 1 60D2C176
@@ -617,7 +575,6 @@ Wire Wire Line
 	5200 4600 5200 4450
 Wire Wire Line
 	5200 4150 5650 4150
-Connection ~ 5650 4150
 $Comp
 L power:GND #PWR05
 U 1 1 60D6632B
@@ -1086,4 +1043,44 @@ Wire Wire Line
 Wire Wire Line
 	4600 1350 5050 1350
 Connection ~ 5050 1350
+Wire Wire Line
+	6250 2800 6250 4050
+$Comp
+L Amplifier_Operational:TL082 U1
+U 1 1 60F58229
+P 5200 2600
+F 0 "U1" H 5200 2967 50  0000 C CNN
+F 1 "TL082CDE4" H 5200 2876 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5200 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5200 2600 50  0001 C CNN
+	1    5200 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 2600
+$Comp
+L Amplifier_Operational:TL082 U1
+U 2 1 60F5B82B
+P 5950 4050
+F 0 "U1" H 5950 4417 50  0000 C CNN
+F 1 "TL082CDE4" H 5950 4326 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5950 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5950 4050 50  0001 C CNN
+	2    5950 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 4050
+Wire Wire Line
+	6250 4050 6250 4300
+Connection ~ 5650 4150
+$Comp
+L Amplifier_Operational:TL082 U1
+U 3 1 60F654A5
+P 9200 1450
+F 0 "U1" H 9158 1496 50  0000 L CNN
+F 1 "TL082CDE4" H 9158 1405 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9200 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9200 1450 50  0001 C CNN
+	3    9200 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

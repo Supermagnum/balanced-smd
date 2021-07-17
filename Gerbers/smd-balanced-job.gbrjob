@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "5.1.10-88a1d61d58~88~ubuntu20.04.1"
+      "Version":     "5.1.10"
     },
-    "CreationDate":  "2021-07-03T03:55:51+02:00"
+    "CreationDate":  "2021-07-17T21:09:21+02:00"
   },
   "GeneralSpecs":
   {
@@ -55,6 +55,11 @@
       "FilePolarity":  "Positive"
     },
     {
+      "Path":  "smd-balanced-B_Adhes.gbr",
+      "FileFunction":  "Glue,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
       "Path":  "smd-balanced-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
@@ -87,6 +92,16 @@
     {
       "Path":  "smd-balanced-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "smd-balanced-F_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "smd-balanced-B_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Bot",
       "FilePolarity":  "Positive"
     }
   ],
