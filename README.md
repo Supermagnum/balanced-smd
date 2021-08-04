@@ -1,5 +1,5 @@
 # balanced-smd
-A small PCB that uses two TL082CDE4 op amps to amplify a signal from a contact microphone.
+A small PCB that uses two LT6234CS8#TRPBF  op amps to amplify a signal from a contact microphone.
 
 It has balanced output,input and should run on +48 phantom power. Shielded cable must with 3 leads be used for connection to the piezo crystals. Please use 0,5 W metal film resistors with 1% tolerance or better and audio quality capacitors.
 C0G (NP0) or X7R capacitors is very good.
