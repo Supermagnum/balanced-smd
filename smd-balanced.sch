@@ -404,9 +404,9 @@ Wire Wire Line
 Connection ~ 3750 1350
 Connection ~ 8550 3150
 Wire Wire Line
-	5650 4150 5650 4800
+	5650 4150 5650 4550
 Wire Wire Line
-	6200 4800 6200 4300
+	6200 4800 6200 4550
 Wire Wire Line
 	6200 4300 6250 4300
 Wire Wire Line
@@ -423,11 +423,11 @@ Wire Wire Line
 Wire Wire Line
 	3850 1050 4600 1050
 Wire Wire Line
-	5500 2600 5500 3400
+	5500 2600 5500 3100
 Wire Wire Line
 	4350 2700 4800 2700
 Wire Wire Line
-	4800 3400 4800 2700
+	4800 3400 4800 3100
 Connection ~ 4800 2700
 Wire Wire Line
 	4800 2700 4900 2700
@@ -1046,25 +1046,25 @@ Connection ~ 5050 1350
 Wire Wire Line
 	6250 2800 6250 4050
 $Comp
-L Amplifier_Operational:TL082 U1
-U 1 1 60F58229
+L Amplifier_Operational:LT6234 U1
+U 1 1 610B0893
 P 5200 2600
 F 0 "U1" H 5200 2967 50  0000 C CNN
-F 1 "TL082CDE4" H 5200 2876 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5200 2600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5200 2600 50  0001 C CNN
+F 1 "LT6234CS8#PBF" H 5200 2876 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5200 2600 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/623345fc.pdf" H 5200 2600 50  0001 C CNN
 	1    5200 2600
 	1    0    0    -1  
 $EndComp
 Connection ~ 5500 2600
 $Comp
-L Amplifier_Operational:TL082 U1
-U 2 1 60F5B82B
+L Amplifier_Operational:LT6234 U1
+U 2 1 610B509A
 P 5950 4050
 F 0 "U1" H 5950 4417 50  0000 C CNN
-F 1 "TL082CDE4" H 5950 4326 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5950 4050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 5950 4050 50  0001 C CNN
+F 1 "LT6234CS8#PBF" H 5950 4326 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5950 4050 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/623345fc.pdf" H 5950 4050 50  0001 C CNN
 	2    5950 4050
 	1    0    0    -1  
 $EndComp
@@ -1073,14 +1073,56 @@ Wire Wire Line
 	6250 4050 6250 4300
 Connection ~ 5650 4150
 $Comp
-L Amplifier_Operational:TL082 U1
-U 3 1 60F654A5
+L Amplifier_Operational:LT6234 U1
+U 3 1 610BC20F
 P 9200 1450
 F 0 "U1" H 9158 1496 50  0000 L CNN
-F 1 "TL082CDE4" H 9158 1405 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9200 1450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 9200 1450 50  0001 C CNN
+F 1 "LT6234CS8#PBF" H 9158 1405 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 9200 1450 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/623345fc.pdf" H 9200 1450 50  0001 C CNN
 	3    9200 1450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C10
+U 1 1 610AE00F
+P 5150 3100
+F 0 "C10" V 4898 3100 50  0000 C CNN
+F 1 "47pF" V 4989 3100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5188 2950 50  0001 C CNN
+F 3 "~" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 610B8196
+P 5900 4550
+F 0 "C11" V 5648 4550 50  0000 C CNN
+F 1 "47pF" V 5739 4550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5938 4400 50  0001 C CNN
+F 3 "~" H 5900 4550 50  0001 C CNN
+	1    5900 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5750 4550 5650 4550
+Connection ~ 5650 4550
+Wire Wire Line
+	5650 4550 5650 4800
+Wire Wire Line
+	6050 4550 6200 4550
+Connection ~ 6200 4550
+Wire Wire Line
+	6200 4550 6200 4300
+Wire Wire Line
+	5000 3100 4800 3100
+Connection ~ 4800 3100
+Wire Wire Line
+	4800 3100 4800 2700
+Wire Wire Line
+	5300 3100 5500 3100
+Connection ~ 5500 3100
+Wire Wire Line
+	5500 3100 5500 3400
 $EndSCHEMATC

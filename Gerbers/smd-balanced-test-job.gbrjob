@@ -7,14 +7,14 @@
       "Application": "Pcbnew",
       "Version":     "5.1.10"
     },
-    "CreationDate":  "2021-08-04T12:10:15+02:00"
+    "CreationDate":  "2021-08-04T12:07:05+02:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "smd-balanced",
-      "GUID": "736d642d-6261-46c6-916e-6365642e6b69",
+      "Name": "smd-balanced-test",
+      "GUID": "736d642d-6261-46c6-916e-6365642d7465",
       "Revision": "rev?"
     },
     "Size":
@@ -40,67 +40,67 @@
   "FilesAttributes":
   [
     {
-      "Path":  "smd-balanced-F_Cu.gbr",
+      "Path":  "smd-balanced-test-F_Cu.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-B_Cu.gbr",
+      "Path":  "smd-balanced-test-B_Cu.gbr",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-F_Adhes.gbr",
+      "Path":  "smd-balanced-test-F_Adhes.gbr",
       "FileFunction":  "Glue,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-B_Adhes.gbr",
+      "Path":  "smd-balanced-test-B_Adhes.gbr",
       "FileFunction":  "Glue,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-F_Paste.gbr",
+      "Path":  "smd-balanced-test-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-B_Paste.gbr",
+      "Path":  "smd-balanced-test-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-F_SilkS.gbr",
+      "Path":  "smd-balanced-test-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-B_SilkS.gbr",
+      "Path":  "smd-balanced-test-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-F_Mask.gbr",
+      "Path":  "smd-balanced-test-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "smd-balanced-B_Mask.gbr",
+      "Path":  "smd-balanced-test-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "smd-balanced-Edge_Cuts.gbr",
+      "Path":  "smd-balanced-test-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-F_Fab.gbr",
+      "Path":  "smd-balanced-test-F_Fab.gbr",
       "FileFunction":  "AssemblyDrawing,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "smd-balanced-B_Fab.gbr",
+      "Path":  "smd-balanced-test-B_Fab.gbr",
       "FileFunction":  "AssemblyDrawing,Bot",
       "FilePolarity":  "Positive"
     }
